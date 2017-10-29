@@ -1,0 +1,53 @@
+<Outward>
+	<mailConfiguration id="smtp">	
+		<smtpServer>noora4.yourpersonalhost.com</smtpServer>
+		<port>465</port>
+		<authentication>true</authentication>
+        <userName>info@projectsmiletrust.com</userName>
+        <password>psinfologin</password>
+        <!-- Mac OS path D: should be replaced by /Users/userName(mohammmedmaaz)/Documents/ -->
+        <emailBodyImagesPath>D:/projectSmileAPI/encryptedPDF/imageProcessing/</emailBodyImagesPath>
+        <attachmentPath>D:/projectSmileAPI/encryptedPDF/</attachmentPath>
+        <emailBodyTemplateFileName>PSMailBodyTemplate.html</emailBodyTemplateFileName>
+        <fromEmailAddress>info@projectsmiletrust.com</fromEmailAddress>
+        <emailSubject>Receipt of Donation to Project Smile [April 2017 - Mar 2018] : </emailSubject>
+        <!-- Wait for 15 Seconds after sending each email / 1 second is represented as 1000 milliSec-->
+        <waitingPeriod>5000</waitingPeriod>
+	</mailConfiguration>
+
+	<sms>
+        <!-- Mandatory -->
+		<server_url>http://login.smsgatewayhub.com/smsapi/pushsms.aspx</server_url>
+		<username_label>user</username_label>
+		<username>testps</username>        <!--UserName with 'PmdTestSms' in hub(Server_url) --> 
+		<password_label>pwd</password_label>
+		<password>408870</password>            <!-- Password for user 'PmdTestSms' -->
+        <!-- /Mandatory -->
+        
+		<countryCode_label></countryCode_label>
+		<phonenumber_label>to</phonenumber_label>
+		<message_label>msg</message_label>
+		<sender_label>sid</sender_label>
+		<sender>WEBSMS</sender>
+		<flashMessage_label>fl</flashMessage_label>
+        <flashMessage>0</flashMessage>
+
+		<!--Different Params for other Gateways in above tags not valid  -->
+		<!-- Usage as follows
+       		   <param1>label1</param1>
+		   <param1_value>value1</param1_value> 
+		-->
+		<param1></param1>
+		<param1_value></param1_value>
+		<param2></param2>	
+		<param2_value></param2_value>
+		<param3></param3>
+		<param3_value></param3_value>
+		<param4></param4>
+		<param4_value></param4_value>
+		<param5></param5>
+		<param5_value></param5_value>
+
+		<messageToSent>Project Smile SMS API</messageToSent>
+	</sms>
+</Outward>	
