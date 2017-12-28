@@ -1,4 +1,5 @@
 # Project-Smile-API (Email and SMS)
+
 Implementation done using Java Mail API and Java SMS using Http
 Email and SMS can be configured to any SMTP/Gateway and send to users
 
@@ -42,7 +43,7 @@ After extraction of .zip file.
 ##### FileName convention of Attahment  
    MOJO123456;emailid@abcd.com.pdf - For Only Sending Email  
    OR  
-   MOJO123456;emailid@abcd.com.pdf - For Email as well as SMS  
+   MOJO123456;emailid@abcd.com;9449115598.pdf - For Email as well as SMS  
 
 ##### Folder Structure  
 ├── projectSmileAPI  
@@ -51,7 +52,7 @@ After extraction of .zip file.
 │   │   └── All PDF files are placed here  
 │   └── ProjectSmile_MailConfig.xml  
 │   └── projectSmileEmail.jar - User need not know about this file  
-│   └── lib(Folder) - User need not know about this file  
+│   └── lib(Folder) - User need not know about these file  
 └
 
 ##### If folder is not extracted in D:\ drive then path should be changed in java Program and again new jar File should be exported using IDE (Eclipse or IntelliJ).  
