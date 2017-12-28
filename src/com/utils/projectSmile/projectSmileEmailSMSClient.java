@@ -32,8 +32,8 @@ public class projectSmileEmailSMSClient {
 		try {
 			String smtpServer = null, port = null, auth = null, userName = null, password = null,
 					imageProcessingPath = null, attachmentPath = null, htmlBodyTemplateName = null, from = null,
-					emailSubject = null;
-			// Initially wait for 10 Seconds if not waiting mentioned in Config.xml
+					emailSubject = null, cc = null;
+			// Initially wait for 3 Seconds if not waiting mentioned in Config.xml
 			long waitInSec = 3000;
 			// Mac File Path - /Users/mohammmedmaaz/Documents/projectSmileAPI/ProjectSmile_MailSMSConfig.xml
 			File psConfig = new File("D:/projectSmileAPI/ProjectSmile_MailSMSConfig.xml");
@@ -56,6 +56,7 @@ public class projectSmileEmailSMSClient {
 						.getTextContent().trim();
 				from = eElement.getElementsByTagName("fromEmailAddress").item(0).getTextContent().trim();
 				emailSubject = eElement.getElementsByTagName("emailSubject").item(0).getTextContent();
+				cc = eElement.getElementsByTagName("CC").item(0).getTextContent().trim();
 				waitInSec = Long
 						.parseLong(eElement.getElementsByTagName("waitingPeriod").item(0).getTextContent().trim());
 			}
@@ -69,6 +70,7 @@ public class projectSmileEmailSMSClient {
 			emailDetailMap.put("From", from);
 			emailDetailMap.put("imageProcessingPath", imageProcessingPath);
 			emailDetailMap.put("AttachmentPath", attachmentPath);
+			emailDetailMap.put("Cc", cc);
 
 			File folder = new File(attachmentPath);
 			File[] listOfFiles = folder.listFiles();
