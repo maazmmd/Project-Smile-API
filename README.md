@@ -23,8 +23,7 @@ SEND EMAIL WITH ATTACHMENT - How to Send (Read Steps Below/ Simple 5 steps to be
 ##### Download Link [Google Drive](https://drive.google.com/open?id=0By1jo4P_Ud1XLTZuZEM3ZzQxS2s)
 STEP 1 : After Downloading the attachment from Google Drive, Extract the .zip in D:/ Drive  
 STEP 2 : Connect to Internet (Good if no firewall settings are enabled).  
-STEP 3 : Download Java and Install(Simple Product Wizard) and Set Env Variables using Below Link  
-         https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation  
+STEP 3 : Download Java and Install(Simple Product Wizard) and Set Env Variables [Reference]( https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation)  
 STEP 5 : Place all the Receipts inside D:/projectSmileAPI/encryptedPDF Folder and remember FileName should be of the form ReceiptNo;emailAddress@host.com;MobileNumber OR ReceiptNo;emailAddress@host.com;  
         Example : MOJO1234567890;maazmmd@gmail.com.pdf OR MOJO1234567890;maazmmd@gmail.com;9449115598.pdf  
 STEP 4 : doble Click on run.bat File  
