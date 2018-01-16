@@ -1,19 +1,19 @@
 <Outward>
 	<mailConfiguration id="smtp">
-		<smtpServer>noora4.yourpersonalhost.com</smtpServer>
+		<smtpServer>HostName</smtpServer>
 		<port>465</port>
 		<authentication>true</authentication>
-        <userName>info@projectsmiletrust.com</userName>
-        <password>psinfologin</password>
+        <userName>username</userName>
+        <password>password</password>
         <!-- Mac OS path D: should be replaced by /Users/userName(mohammmedmaaz)/Documents/ -->
         <emailBodyImagesPath>D:/projectSmileAPI/encryptedPDF/imageProcessing/</emailBodyImagesPath>
         <attachmentPath>D:/projectSmileAPI/encryptedPDF/</attachmentPath>
         <emailBodyTemplateFileName>PSMailBodyTemplate.html</emailBodyTemplateFileName>
-        <fromEmailAddress>info@projectsmiletrust.com</fromEmailAddress>
+        <fromEmailAddress>from@host.com</fromEmailAddress>
         <emailSubject>Receipt of Donation to Project Smile [April 2017 - Mar 2018] : </emailSubject>
         <!-- Wait for 15 Seconds after sending each email / 1 second is represented as 1000 milliSec-->
         <waitingPeriod>4000</waitingPeriod>
-        <CC>projectsmile.trust@gmail.com;info@projectsmiletrust.com</CC>
+        <CC>CC email Addresses</CC>
 	</mailConfiguration>
 
 	<sms>
