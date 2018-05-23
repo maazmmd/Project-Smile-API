@@ -1,11 +1,11 @@
 # Project-Smile-API (Email and SMS)
 
-Implementation done using Java Mail API and Java SMS using Http  
-Email and SMS can be configured to any SMTP/Gateway and send to users
+* Implementation done using Java Mail API and Java SMS using Http  
+* Email and SMS can be configured to any SMTP/Gateway and send to users
 
 Email Template can be created online using tools [Reference Link](https://beefree.io/)
 
-All the Configuration are mentioned in Config.xml,
+* All the Configuration are mentioned in Config.xml,
 
 *************************************************************************************************************  
 Project Smile Email API for sending Email with attachment as Receipt  
@@ -13,28 +13,29 @@ Project Smile Email API for sending Email with attachment as Receipt
 ## Prerequisite/SetUp 
 ##### Machine showed to connected to Internet  
 ##### Java Should be installed in Machine  
-   Windows OS  
-    a.Download and Install Java(jdk1.8) from Oracle website  
-    b.Set up Environment Variables, [Reference](https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation)
+Windows OS  
+* Download and Install Java(jdk1.8) from Oracle website  
+* Set up Environment Variables, [Reference](https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation)
 *********************************************************************************
 
-SEND EMAIL WITH ATTACHMENT - How to Send (Read Steps Below/ Simple 5 steps to be followed for setUp, if you are not a developer as well - No need worry and no need to know any coding skills, even Dumb people can co-relate to comments below :-) :-)  
+##### SEND EMAIL WITH ATTACHMENT  
+How to Send (Read Steps Below/ Simple 5 steps to be followed for setUp, if you are not a developer as well
 
 ##### Download Link [Google Drive](https://drive.google.com/open?id=0By1jo4P_Ud1XLTZuZEM3ZzQxS2s)
-STEP 1 : After Downloading the attachment from Google Drive, Extract the .zip in D:/ Drive  
-STEP 2 : Connect to Internet (Good if no firewall settings are enabled).  
-STEP 3 : Download Java and Install(Simple Product Wizard) and Set Env Variables [Reference]( https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation)  
-STEP 5 : Place all the Receipts inside D:/projectSmileAPI/encryptedPDF Folder and remember FileName should be of the form ReceiptNo;emailAddress@host.com;MobileNumber OR ReceiptNo;emailAddress@host.com;  
+
+* After Downloading the attachment from Google Drive, Extract the .zip in D:/ Drive  
+* Connect to Internet (Good if no firewall settings are enabled).  
+* Download Java and Install(Simple Product Wizard) and Set Env Variables [Reference]( https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation)  
+* Place all the Receipts inside D:/projectSmileAPI/encryptedPDF Folder and remember FileName should be of the form ReceiptNo;emailAddress@host.com;MobileNumber OR ReceiptNo;emailAddress@host.com;  
         Example : MOJO1234567890;maazmmd@gmail.com.pdf OR MOJO1234567890;maazmmd@gmail.com;9449115598.pdf  
-STEP 4 : doble Click on run.bat File  
+* doble Click on run.bat File  
 ******************************************************************************************************************************   
 ### Measures to take care 
 
-##### Extract zip File in D:\ drive.  
-After extraction of .zip file.  
-##### Go through MailConfig.xml and enter SMTP Details and other necessary details.  
-##### Place all the pdf documents in D:/projectSmileAPI/encryptedPDF/ folder  
-##### Run the bat File present in D:/projectSmileAPI Folder.  
+* Extract zip File in D:\ drive, After extraction of .zip file follow below guidelines
+* Go through MailConfig.xml and enter SMTP Details and other necessary details.  
+* Place all the pdf documents in D:/projectSmileAPI/encryptedPDF/ folder  
+* Run the bat File present in D:/projectSmileAPI Folder.  
 
 ##### Status.txt File is the log file, prints success and failure  
 ##### System should be connected to Internet (Good if no firewall settings are enabled).  
@@ -56,6 +57,3 @@ After extraction of .zip file.
 ##### If folder is not extracted in D:\ drive then path should be changed in java Program and again new jar File should be exported using IDE (Eclipse or IntelliJ).  
 ##### Bat file cannot be run in Mac and Unix OS.  
 ##### If Mac and Unix is being used step with ###Tags in config as well as Java Program should be changed.  
-
-If any doubts Kindly contact Mohammed Maaz  
-Reachable at +91-9449115598, e-Mail : maazmmd@gmail.com  
