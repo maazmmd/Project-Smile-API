@@ -39,9 +39,9 @@ public class SMSHandler {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(psConfig);
-			NodeList mailConfigurationList = doc.getElementsByTagName("sms");
-			for (int i = 0; i < mailConfigurationList.getLength(); i++) {
-				Node configNode = mailConfigurationList.item(i);
+			NodeList smsConfigurationList = doc.getElementsByTagName("sms");
+			for (int i = 0; i < smsConfigurationList.getLength(); i++) {
+				Node configNode = smsConfigurationList.item(i);
 				Element eElement = (Element) configNode;
 				url = eElement.getElementsByTagName("server_url").item(0).getTextContent().trim();
 				username_label = eElement.getElementsByTagName("username_label").item(0).getTextContent().trim();
